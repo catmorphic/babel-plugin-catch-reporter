@@ -1,6 +1,6 @@
 {
     "name": "babel-plugin-catch-reporter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A babel plugin that automatically reports errors in your program",
     "main": "lib/index.js",
     "scripts": {
@@ -15,6 +15,14 @@
     ],
     "author": "Levi Wong",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/catmorphic/babel-plugin-catch-reporter.git"
+    },
+    "homepage": "https://github.com/catmorphic/babel-plugin-catch-reporter#readme",
+    "bugs": {
+        "url": "https://github.com/catmorphic/babel-plugin-catch-reporter/issues"
+    },
     "dependencies": {
         "@babel/helper-plugin-utils": "^7.10.4",
         "@babel/types": "^7.12.7",
