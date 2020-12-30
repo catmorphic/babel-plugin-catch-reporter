@@ -25,7 +25,7 @@ A babel plugin that:
             "babel-plugin-catch-reporter",
             {
                 "name": "Sentry",
-                "source": "sentry",
+                "source": "@sentry/node",
                 "methodName": "captureException",
                 "catchPromise": true,
                 "namespaced": true
@@ -63,7 +63,7 @@ export function baz() {
 gets compiled to:
 
 ```js
-import * as Sentry from 'sentry'
+import * as Sentry from '@sentry/node'
 export function noop() {
     try {
         return nonexistent
@@ -101,7 +101,7 @@ fetch().json().then(console.log)
 gets compiled to:
 
 ```js
-import * as Sentry from 'sentry'
+import * as Sentry from '@sentry/node'
 fetch()
     .json()
     .then(console.log)
