@@ -28,7 +28,7 @@ export function Program(path, state) {
                 'body',
                 types.importDeclaration(
                     [
-                        state.babelPluginLoggerSettings.nameSpaced
+                        state.babelPluginLoggerSettings.namespaced
                             ? types.importNamespaceSpecifier(
                                   types.identifier(loggerName)
                               )
