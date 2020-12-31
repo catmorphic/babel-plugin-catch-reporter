@@ -20,6 +20,9 @@ function getFunction(path, _, knownData) {
 
     const isCatchClause = types.isCatchClause(path)
     if (isCatchClause) {
+        if (!path.node.param) {
+            path.node.param = types.identifier('e')
+        }
         argumentsToAdd.push(path.node.param.name)
     } else if (knownData.name === MEMBER_EXPRESSION_CATCH) {
         argumentsToAdd.push(...getFunctionArguments(path))
